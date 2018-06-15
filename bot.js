@@ -31,11 +31,11 @@ client.on('message', message => {
 }); 
 client.on('message', message => {    
 if(message.content === "Server Open") {
-    message.channel.send("伺服器已開啟");
+    message.send("伺服器已開啟");
   }
 client.on('message', message => {    
   if(message.content === "Server close") {
-    message.channel.send("伺服器已關閉");
+    message.send("伺服器已關閉");
   }
     
 // THIS  MUST  BE  THIS  WAY
