@@ -28,11 +28,9 @@ client.on('message', message => {
 }); 
 client.on('message', message => {
    if (message.content === 'HAHA') {
-    	message.reply('我可不覺得.我很寂寞');
+    	message.sendmessage('我可不覺得.我很寂寞');
   	}
 }); 
-Case "help"
-   message.channel.sendmessage("command:" vbNewline + "test - shows a test  argument ")
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
