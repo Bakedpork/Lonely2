@@ -31,6 +31,8 @@ client.on('message', message => {
     	message.reply('我可不覺得.我很寂寞');
   	}
 }); 
+Case "help"
+   message.channel.sendmessage("command:" vbNewline + "test - shows a test  argument ")
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
