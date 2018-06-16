@@ -5,38 +5,15 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
-    if (message.content === 'Baketball') {
-    	message.reply('我最愛黑子的籃球了');
-  	}
-});
-client.on('message', message => {
-    if (message.content === 'Lonely') {
-    	message.reply('公主.主人在叫我嗎?');
-  	}
-client.on('message', message => {
-   if (message.content === 'Funny') {
-    	message.reply('我可不覺得.我很寂寞');
-  	}
-}); 
-client.on('message', message => {
-   if (message.content === 'XD') {
-    	message.reply('我可不覺得.我很寂寞');
-  	}
-}); 
-client.on('message', message => {    
-   if (message.content === 'HAHA') {
-    	message.sendmessage('我可不覺得.我很寂寞');
-  	}
-}); 
-client.on('message', message => {    
-if(message.content === "Server Open") {
-    message.send("伺服器已開啟");
-  }
-client.on('message', message => {    
-  if(message.content === "Server close") {
-    message.send("伺服器已關閉");
-  }
+if(message.content == 'ping') {
+
+    message.channel.sendMessage('pong');
+}
+
+if(message.content == 'server Close') {
+
+    message.channel.sendMessage('Server Close');
+}
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
